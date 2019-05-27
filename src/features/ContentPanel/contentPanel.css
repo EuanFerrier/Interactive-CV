@@ -1,0 +1,78 @@
+#contentPanel {
+  width: 60%;
+  height: 80%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.25);
+}
+
+#aboutPanel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#contactPanel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.LeftPanel {
+  width: 50%;
+  height: 100%;
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.RightPanel {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+}
+
+#title {
+  font-size: 2vw;
+  color: #2196f3;
+  width: 80%;
+  margin: 0;
+}
+
+#subTitle {
+  font-size: 1.5vw;
+  margin: 0;
+  margin-top: 1vh;
+  padding-bottom: 1vh;
+  width: 80%;
+  color: grey;
+  border-bottom: 4px solid #2196f3;
+}
+
+.body {
+  margin: 0;
+  width: 80%;
+  font-size: 1vw;
+  color: grey;
+}
+
+.bodyHeading {
+  margin: 0;
+  margin-top: 2vh;
+  width: 80%;
+  margin-bottom: 1vh;
+  color: #2196f3;
+  font-size: 1vw;
+}

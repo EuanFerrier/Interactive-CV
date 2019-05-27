@@ -1,0 +1,21 @@
+#mainPage {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #2196f3 70%, white 30%);
+}
+
+#navigationPanel {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.25);
+}
+
+#mainPageBody {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
