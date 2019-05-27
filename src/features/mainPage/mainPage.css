@@ -1,7 +1,7 @@
 #mainPage {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(180deg, #2196f3 70%, white 30%);
+  background: linear-gradient(180deg, #2196f3 70%, yellow 30%);
 }
 
 #navigationPanel {
