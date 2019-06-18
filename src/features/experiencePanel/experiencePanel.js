@@ -2,13 +2,6 @@ import React, { Component } from "react";
 import "./experiencePanel.css";
 
 class ExperiencePanel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      menuTab: "About"
-    };
-  }
-
   render() {
     return (
       <div id="experiencePanel">
@@ -17,8 +10,8 @@ class ExperiencePanel extends Component {
           <h1 className="experienceHeading" id="experiencePosition">{this.props.position}</h1>
         </div>
         <div id="experienceContent">
-          <h1 className="experienceHeading" id="experienceCompany">{this.props.companyName}</h1>
-          <p className="experienceHeading" id="experienceBody">{this.props.body}</p>
+          <h1 className="experienceBody" id="experienceCompany">{this.props.companyName}</h1>
+          <p className="experienceBody" id="experienceBody">{this.props.body}</p>
         </div>
       </div>
     );

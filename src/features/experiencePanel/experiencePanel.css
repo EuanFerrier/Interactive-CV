@@ -8,9 +8,6 @@
 
 #experienceHeader{
   width: 35%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   border-right: 2px solid grey;
   margin-right: 2%;
 }
@@ -21,16 +18,17 @@
 }
 
 .experienceHeading{
+  width: 95%;
+  margin: 0;
+  font-size: 0.8vw;
+  text-align: right;
+}
+
+.experienceBody{
   margin: 0;
   font-size: 0.8vw;
 }
 
-#experiencePosition{
-  width: 95%;
-  text-align: right;
-}
-
-#experienceDate{
-  width: 95%;
-  text-align: right;
+#experienceCompany{
+  color: #2196f3;
 }

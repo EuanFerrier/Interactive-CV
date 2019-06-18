@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./navigationBar.css";
 
-class DateSelector extends Component {
+class NavigationBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,4 +39,4 @@ class DateSelector extends Component {
   }
 }
 
-export default DateSelector;
+export default NavigationBar;

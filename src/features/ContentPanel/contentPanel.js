@@ -3,12 +3,7 @@ import "./contentPanel.css";
 import Profile from "./profilePicture.jpg";
 import ExperiencePanel from "../experiencePanel/experiencePanel.js"
 
-class DateSelector extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
+class ContentPanel extends Component {
   aboutPage() {
     return (
       <div className="mainBody">
@@ -34,24 +29,6 @@ class DateSelector extends Component {
     );
   }
 
-  experiencePage(){
-    return (
-      <div className="mainBody">
-        <div className="LeftPanel">
-          <h2 id="subTitle">Work Experience</h2>
-          <ExperiencePanel position="Customer Assistant" companyName="Game Digital" date="2015-2016" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
-          <ExperiencePanel position="Customer Assistant" companyName="Tesco" date="2016 - 2018" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
-          <ExperiencePanel position="Software Engineer" companyName="Accenture" date="2018 - Current" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
-        </div>
-        <div className="RightPanel">
-          <h2 id="subTitle">Education</h2>
-          <ExperiencePanel position="Interactive Design" companyName="Edinburgh Napier" date="2016 - 2018" body="test"/>
-          <ExperiencePanel position="Software Development" companyName="Heriot Watt" date="2018 - Current" body="test"/>
-        </div>
-      </div>
-      )
-  }
-
   contactPage() {
     return (
       <div className="mainBody">
@@ -74,6 +51,24 @@ class DateSelector extends Component {
     );
   }
 
+  experiencePage(){
+    return (
+      <div className="mainBody">
+        <div className="LeftPanel">
+          <h2 id="subTitle">Work Experience</h2>
+          <ExperiencePanel position="Customer Assistant" companyName="Game Digital" date="2015-2016" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
+          <ExperiencePanel position="Customer Assistant" companyName="Tesco" date="2016 - 2018" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
+          <ExperiencePanel position="Software Engineer" companyName="Accenture" date="2018 - Current" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
+        </div>
+        <div className="RightPanel">
+          <h2 id="subTitle">Education</h2>
+          <ExperiencePanel position="Interaction Design" companyName="Edinburgh Napier" date="2016 - 2018" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
+          <ExperiencePanel position="Software Development" companyName="Heriot Watt" date="2018 - Current" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
+        </div>
+      </div>
+      )
+  }
+
   render() {
     return (
       <div id="contentPanel">
@@ -89,4 +84,4 @@ class DateSelector extends Component {
   }
 }
 
-export default DateSelector;
+export default ContentPanel;
