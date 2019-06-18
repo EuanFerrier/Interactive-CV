@@ -1,0 +1,44 @@
+#experiencePanel{
+  width: 90%;
+  height: 20%;
+  margin-top: 2vh;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  border-radius: 20px;
+}
+
+#experienceHeader{
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+#experienceBody{
+  height: 70%;
+}
+
+.experienceHeading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  font-size: 1vw;
+}
+
+#experienceTitle{
+  width: 70%;
+  background-color: white;
+  color: grey;
+  border-bottom: 2px solid grey;
+  border-top-left-radius: 20px;
+}
+
+#experienceDate{
+  width: 30%;
+  background-color: purple;
+  color: white;
+  border-bottom: 2px solid grey;
+  border-top-right-radius: 20px;
+}

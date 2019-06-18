@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./contentPanel.css";
 import Profile from "./profilePicture.jpg";
+import ExperiencePanel from "../experiencePanel/experiencePanel.js"
 
 class DateSelector extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class DateSelector extends Component {
 
   aboutPage() {
     return (
-      <div id="aboutPanel">
+      <div className="mainBody">
         <div className="LeftPanel">
           <img id="image" src={Profile} />
         </div>
@@ -38,14 +39,27 @@ class DateSelector extends Component {
   //   )
   // }
 
-  // experiencePage(){
-  //   return (
-  //     )
-  // }
+  experiencePage(){
+    return (
+      <div className="mainBody">
+        <div className="LeftPanel">
+          <h2 id="subTitle">Work Experience</h2>
+          <ExperiencePanel title="Game Digital - Customer Assistant" date="9/15 - 1/16" body="test"/>
+          <ExperiencePanel title="Tesco - Customer Assistant" date="6/16 - 8/18" body="test"/>
+          <ExperiencePanel title="test - Software Engineer" date="8/18 - Current" body="test"/>
+        </div>
+        <div className="RightPanel">
+          <h2 id="subTitle">Education</h2>
+          <ExperiencePanel title="Edinburgh Napier - Interactive Design" date="9/16 - 6/18" body="test"/>
+          <ExperiencePanel title="Heriot Watt - Software Development" date="9/18 - Current" body="test"/>
+        </div>
+      </div>
+      )
+  }
 
   contactPage() {
     return (
-      <div id="contactPanel">
+      <div className="mainBody">
         <div className="LeftPanel">
           <img id="image" src={Profile} />
         </div>
@@ -72,6 +86,8 @@ class DateSelector extends Component {
           ? this.aboutPage()
           : this.props.menuTab === "Contact"
           ? this.contactPage()
+          : this.props.menuTab === "Experience"
+          ? this.experiencePage()
           : this.props.menuTab}
       </div>
     );
