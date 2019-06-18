@@ -16,7 +16,7 @@ class DateSelector extends Component {
 
   renderButtons() {
     let buttons = [];
-    let tabNames = ["About", "Experience", "Skills", "Contact"];
+    let tabNames = ["About", "Experience", "Contact"];
     for (let i = 0; i < tabNames.length; i++) {
       buttons.push(
         <button

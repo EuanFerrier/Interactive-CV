@@ -34,24 +34,19 @@ class DateSelector extends Component {
     );
   }
 
-  // skillsPage(){
-  //   return (
-  //   )
-  // }
-
   experiencePage(){
     return (
       <div className="mainBody">
         <div className="LeftPanel">
           <h2 id="subTitle">Work Experience</h2>
-          <ExperiencePanel title="Game Digital - Customer Assistant" date="9/15 - 1/16" body="test"/>
-          <ExperiencePanel title="Tesco - Customer Assistant" date="6/16 - 8/18" body="test"/>
-          <ExperiencePanel title="test - Software Engineer" date="8/18 - Current" body="test"/>
+          <ExperiencePanel position="Customer Assistant" companyName="Game Digital" date="2015-2016" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
+          <ExperiencePanel position="Customer Assistant" companyName="Tesco" date="2016 - 2018" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
+          <ExperiencePanel position="Software Engineer" companyName="Accenture" date="2018 - Current" body="I'm a paragraph. change here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you."/>
         </div>
         <div className="RightPanel">
           <h2 id="subTitle">Education</h2>
-          <ExperiencePanel title="Edinburgh Napier - Interactive Design" date="9/16 - 6/18" body="test"/>
-          <ExperiencePanel title="Heriot Watt - Software Development" date="9/18 - Current" body="test"/>
+          <ExperiencePanel position="Interactive Design" companyName="Edinburgh Napier" date="2016 - 2018" body="test"/>
+          <ExperiencePanel position="Software Development" companyName="Heriot Watt" date="2018 - Current" body="test"/>
         </div>
       </div>
       )
